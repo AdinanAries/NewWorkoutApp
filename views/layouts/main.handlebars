@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="/assets/styles/style.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>Your Dashboard</title>
+</head>
+
+<body>
+    <div class="Mainwrapper">
+        <p style="color: white; font-weight: bolder; text-align: center; font-size: 2rem;
+        margin-bottom: 10px;">
+            Fitness Dashboard
+        </p>
+        <div class="ProfileInfo">
+            <div class="info">
+                <p style="color: white; font-size: 1.2rem;">
+                    {{#if personName}}
+                    {{personName}}
+                    {{/if}}
+                </p>
+                <p style="color: white;">{{#if weight}}
+                    {{weight}},
+                    {{sex}},
+                    {{age}}
+                    {{/if}}
+                </p>
+            </div>
+            <img class="propic" src="assets/images/NoProPicAvatar.png" />
+        </div>
+        <div class="MainSection">
+            <div class="mainSectionBackground"></div>
+            <div class="mainSectionElements">
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
